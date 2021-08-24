@@ -22,10 +22,15 @@ Feel free to improve this library, but please make sure to read all sources abov
 const winlink = require("winlink");
 
 /* create file-link: writeFile( filename, target ) */
-winlink.writeFile( "a.lnk", "C:\\temp\\a.txt" );
+winlink.writeFile( "a.lnk", "C:\\temp\\a.txt" )
+.then( () => console.log( "file link created" ) )
+.catch( console.log.bind( console ) );
 
 /* create directory-link: writeDirectory( filename, target ) */
-winlink.writeDirectory( "test.lnk", "C:\\temp" );
+winlink.writeDirectory( "test.lnk", "C:\\temp" )
+.then( () => console.log( "directory link created" ) )
+.catch( console.log.bind( console ) );
+
 ```
 
 ## Motivation for pure JavaScript:
