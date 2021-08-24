@@ -19,13 +19,13 @@ Feel free to improve this library, but please make sure to read all sources abov
 ## Usage:
 
 ```javascript
-const shellLink = require("winlink");
+const winlink = require("winlink");
 
 /* create file-link: writeFile( filename, target ) */
-writeFile( "a.lnk", "C:\\temp\\a.txt" );
+winlink.writeFile( "a.lnk", "C:\\temp\\a.txt" );
 
 /* create directory-link: writeDirectory( filename, target ) */
-writeDirectory( "test.lnk", "C:\\temp" );
+winlink.writeDirectory( "test.lnk", "C:\\temp" );
 ```
 
 ## Motivation for pure JavaScript:
